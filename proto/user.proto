@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+message User {
+    string first_name = 1;
+    string last_name = 2;
+}
+
+message Respose {
+	string resp = 1;
+}
+
+service Hello {
+    rpc hello_user(User) returns (Respose) {}
+}
