@@ -18,8 +18,8 @@ server = grpc.server(futures.ThreadPoolExecutor())
 user_pb2_grpc.add_HelloServicer_to_server(
         HelloServicer(), server)
 
-print('Starting server. Listening on port 50051.')
-server.add_insecure_port('[::]:50051')
+print('Starting server. Listening on port 4001.')
+server.add_insecure_port('[::]:4001')
 server.start()
 
 try:
