@@ -3,7 +3,7 @@ import grpc
 from proto import user_pb2
 from proto import user_pb2_grpc
 
-channel = grpc.insecure_channel('localhost:50051')
+channel = grpc.insecure_channel('localhost:4001')
 
 stub = user_pb2_grpc.HelloStub(channel)
 
